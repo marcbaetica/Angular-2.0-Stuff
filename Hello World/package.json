@@ -1,0 +1,18 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcbaetica/Angular-2.0-Stuff/Hello-World/"
+  },
+  "author": "Marc-Alexandru Baetica",
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "latest"
+  }
+}
