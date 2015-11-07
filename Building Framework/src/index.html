@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>First Angular 2.0 application transpiling TypeScript</title>
+
+    <!-- our dependencies: angular2 (dev version), typescript.js (for transpiling TypeScript into JavaScript), system.js -->
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
+    <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+    
+    <script>
+
+    	// System is the module loader from the system.js library (a tool that can can import code)
+    	// set System to transpile TypeScript code using our browser and import the app.ts file
+    	System.config({
+        packages: {'app': {defaultExtension: 'js'}}
+      });
+      System.import('app/app');
+    
+    </script>
+  
+  </head>
+  
+  <body>
+  
+    <myApp>loading...</myApp>
+  
+  </body>
+
+</html>
