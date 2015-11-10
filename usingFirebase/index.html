@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>First Firebase App!</title>
+	</head>
+
+	<body>
+  		<script src="https://code.angularjs.org/tools/system.js"></script>
+    	<script src="https://code.angularjs.org/tools/typescript.js"></script>
+    	<script src="https://code.angularjs.org/2.0.0-alpha.44/angular2.dev.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://bootswatch.com/slate/bootstrap.min.css">
+		<script>
+    		System.config({
+    			transpiler: 'typescript',
+    			typescriptOptions: { emitDecoratorMetadata: true }
+    		});
+    		System.import('./app.ts');
+		</script>
+
+		Name: <input type="text" #name></input>
+		<input type="submit" (click)='sayHello(name)' value="Salute Me!">
+		<br><br>
+		<nameHere>Press button to be saluted! :D</nameHere>
+	</body>
+
+</html>
